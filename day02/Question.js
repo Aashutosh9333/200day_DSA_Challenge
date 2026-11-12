@@ -141,3 +141,36 @@ const numb = [45,12,89,5,34];
  }
  const nummin =[ 10,20,30,40];
  console.log(findMin(nummin));
+
+// reverse an array without using .reverse()
+
+//problem:reverse the element of an array without using the built in reverse()methos
+
+function reverseArray(arr){
+    let left =0;
+    let right =arr.length -1;
+    while (left < right){
+        let temp =arr[left];
+        arr[left] = arr[right];
+        arr[right] = temp;
+        left++;
+        right--;
+    }
+    return arr;
+}
+const numbe = [10,20,30,40];
+console.log(reverseArray(numbe));
+
+// count even numbers in an array 
+
+function countEven(arr){
+    let count =0;
+    for (let i =0; i<arr.length; i++){
+        if (arr[i] % 2 === 0){
+            count++;
+        }
+    }
+    return count;
+}
+const numbers1 = [10,15,20,25,30,35];
+console.log(countEven(numbers1));
