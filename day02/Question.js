@@ -125,3 +125,19 @@ const numb = [45,12,89,5,34];
  console.log(findmax(nummax));
 
  //find min
+ function findmin(arr){
+    if(arr.length === 0){
+        return undefined;
+    }
+
+    let min =[0];
+
+    for(let i = 0; i< arr.length; i++){
+        if (arr[i]<min){
+            min=arr[i];
+        }
+    }
+    return min;
+ }
+ const nummin =[ 10,20,30,40];
+ console.log(findMin(nummin));
